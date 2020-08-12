@@ -2,6 +2,7 @@ require 'telegram/bot'
 require_relative 'motivation.rb'
 
 class Bot
+
   def initialize
     token = ENV['BOT_TOKEN']
 
