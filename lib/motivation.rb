@@ -5,6 +5,7 @@ require 'net/http'
 require 'json'
 require_relative 'bot.rb'
 
+# Class bot
 class Motivation
   @values = nil
 

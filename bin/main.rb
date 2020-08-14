@@ -1,6 +1,12 @@
-#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# !/usr/bin/env ruby
+
+require 'dotenv/load'
 
 require_relative '../lib/bot.rb'
 require_relative '../lib/motivation.rb'
 
-Bot.new
+telegram_bot = Bot.new
+
+telegram_bot.telegram
