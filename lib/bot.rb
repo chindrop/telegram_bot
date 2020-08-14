@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'telegram/bot'
 require 'dotenv/load'
 require_relative 'motivation.rb'
@@ -10,10 +8,8 @@ class Bot
     @token = ENV[API_KEY]
   end
 
-  # rubocop:disable Metrics/MethodLength
-  # rubocop:disable Metrics/AbcSize
+  # rubocop:disable Metrics/MethodLength Metrics/AbcSize
   def telegram
-    # rubocop:enable Metrics/AbcSize
     bot = TelegramBot.new(token: @token)
     bot.get_updates(fail_silently: true) do |message|
       puts "@#{message.from.username}: #{message.text}"
