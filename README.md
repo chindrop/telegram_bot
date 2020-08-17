@@ -1,11 +1,11 @@
 # telegram_bot(@chin_lee)
 
-![screenshot](tele.png)
+![screenshot](./tele.png)
 ## Preface
 
 > A telegram bot that can be initialized on the command line(windows) / terminal(mac &amp; linux) where it responds to specific commands - ```/start```, ```/motivate```, or ```/stop```.
 You can type these commands without prefixing them with the foreward stick(```/```)
-You may search for the bot on telegram with the username @JelilBot.
+You may search for the bot on telegram with the username @chin_lee.
 
 ## Purpose
 
@@ -23,9 +23,7 @@ You may search for the bot on telegram with the username @JelilBot.
 
 ## Features
 
-- The bot has two main features
-- Ability to give you the latest news updates from the BBC website.
-- It also gives motivational quotes with the author's name.
+- Gives inspirational qoutes
 
 ### Commands To Use
 
@@ -68,7 +66,7 @@ git clone https://github.com/chindrop/telegram_bot.git
 - Navigate to your telegram account if you have one. Or create new telegram account.
 - Create a new bot with the help of BotFather. Use this documentation if you are facing challenges [New Bot](https://core.telegram.org/bots#6-botfather).
 - Obtain your new bot's token.
-- Go to the Bot class and assign your token to ```TEL_BOT_TOKEN``` variable.
+- Go to the Bot class and assign your token to ```Token``` variable.
 
 #### Run on terminal/prompt
 
