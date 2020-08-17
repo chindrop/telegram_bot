@@ -2,7 +2,7 @@ require_relative '../lib/bot.rb'
 
 describe Bot do
   let(:bot) { Bot.new }
-  let(:api_key) { '1153728796:AAFOF8Abq6OPTu2I35xkr2FhlhgzpiylDJw' }
+  let(:api_key) { '' }
   describe '.initialize' do
     it 'Checks user token recieved' do
       bot.token = api_key
@@ -16,13 +16,4 @@ describe Bot do
       expect(token_start).to_not eq(token_end)
     end
   end
-
-  # describe '.telegram' do
-  #   it 'Returns motivational message' do
-  #     bot.token = api_key
-  #     result = bot.telegram
-  #     expect(result).should be_a(String)
-  #   end
-
-  # end
 end
