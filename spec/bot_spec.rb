@@ -18,7 +18,7 @@ let(:bot) {Bot.new}
   end
   describe '.telegram' do
     it 'Check if bot receives message' do
-      bot.token = '1153728796:AAFOF8Abq6OPTu2I35xkr2FhlhgzpiylDJw'
+      bot.token = ''
       p bot.telegram
     end
   end
