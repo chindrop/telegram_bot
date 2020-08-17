@@ -1,11 +1,15 @@
+# !/usr/bin/env ruby
+
 require 'telegram/bot'
 require 'dotenv/load'
 require_relative 'motivation.rb'
 
 # class Motivation
 class Bot
+  attr_accessor :token
+
   def initialize
-    @token = '1153728796:AAFOF8Abq6OPTu2I35xkr2FhlhgzpiylDJw'
+    @token = token
   end
 
   # rubocop:disable Metrics/MethodLength Metrics/AbcSize

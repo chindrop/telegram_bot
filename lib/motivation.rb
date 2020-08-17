@@ -1,10 +1,11 @@
+# !/usr/bin/env ruby
+
 require 'telegram_bot'
 require 'net/http'
 require 'json'
 
 require_relative 'bot.rb'
 
-# Class bot
 class Motivation
   @values = nil
 
@@ -26,5 +27,4 @@ class Motivation
     response = JSON.parse(response)
     response
   end
-
 end
