@@ -26,6 +26,7 @@ class Bot
           reply.text = "Hello, #{message.from.first_name}!"
         when /stop/i
           reply.text = "Ciao, #{message.from.first_name}"
+        exit
         when /motivate/i
           values = Motivation.new
           value = values.random
