@@ -14,6 +14,8 @@ class Bot
 
   # rubocop:disable Metrics/MethodLength Metrics/AbcSize
   def telegram
+    result = ' '
+
     bot = TelegramBot.new(token: @token)
     bot.get_updates(fail_silently: true) do |message|
       puts "@#{message.from.username}: #{message.text}"
@@ -27,13 +29,14 @@ class Bot
         when /motivate/i
           values = Motivation.new
           value = values.random
-          reply.text = value['text'].to_s
+         result = (reply.text = value['text'].to_s)
         else
           reply.text = "#{message.from.first_name}, have no idea what #{command.inspect} means."
         end
         puts "sending #{reply.text.inspect} to @#{message.from.username}"
         reply.send_with(bot)
       end
+      result
     end
   end
   # rubocop:enable Metrics/MethodLength
