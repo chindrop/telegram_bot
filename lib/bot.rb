@@ -26,11 +26,10 @@ class Bot
           reply.text = "Hello, #{message.from.first_name}!"
         when /stop/i
           reply.text = "Ciao, #{message.from.first_name}"
-        exit
         when /motivate/i
           values = Motivation.new
           value = values.random
-         result = (reply.text = value['text'].to_s)
+          result = (reply.text = value['text'].to_s)
         else
           reply.text = "#{message.from.first_name}, have no idea what #{command.inspect} means."
         end
