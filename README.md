@@ -1,7 +1,6 @@
-# telegram_bot
-# Telegram_bot(@chin_lee)
+# telegram_bot(@chin_lee)
 
-
+![screenshot](tele.png)
 ## Preface
 
 > A telegram bot that can be initialized on the command line(windows) / terminal(mac &amp; linux) where it responds to specific commands - ```/start```, ```/motivate```, or ```/stop```.
