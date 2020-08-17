@@ -5,7 +5,7 @@ require_relative 'motivation.rb'
 # class Motivation
 class Bot
   def initialize
-    @token = ENV[API_KEY]
+    @token = '1153728796:AAFOF8Abq6OPTu2I35xkr2FhlhgzpiylDJw'
   end
 
   # rubocop:disable Metrics/MethodLength Metrics/AbcSize

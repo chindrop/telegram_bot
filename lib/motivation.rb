@@ -1,6 +1,7 @@
 require 'telegram_bot'
 require 'net/http'
 require 'json'
+
 require_relative 'bot.rb'
 
 # Class bot
@@ -11,6 +12,13 @@ class Motivation
     @values = request
   end
 
+  def random
+    @values = @values.sample
+    @values
+  end
+
+  private
+
   def request
     url = 'https://type.fit/api/quotes'
     uri = URI(url)
@@ -19,8 +27,4 @@ class Motivation
     response
   end
 
-  def random
-    @values = @values.sample
-    @values
-  end
 end
